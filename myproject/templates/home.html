@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Boxes with Buttons</title>
+</head>
+<body>
+    <p>Below is the mock data set which is a dictionary: </p>
+    <form action="{{ url_for('fetch_data') }}" method="post">
+<!--        <input type="text" name="q" value="{{input_data}}" id="q">-->
+        <textarea id="q" name="q" rows="7" cols="50">{{input_data}}</textarea><br><br>
+        <button type="submit">Get the processed data set</button><br>
+        <p>Below is the processed mock data set where the values of the keys "title" and "body" are converted to uppercase: </p>
+        <textarea id="q1" name="q1" rows="7" cols="50">{{output_data}}</textarea>
+    </form>
+<!--    <button >Get the data</button><br>-->
+<!--    <p>Below is the processed mock data set where the values are converted to uppercase: </p>-->
+<!--    <form action="{{ url_for('fetch_data') }}" method="post">-->
+<!--&lt;!&ndash;        <input type="text" value="{{output_data}}">&ndash;&gt;-->
+<!--        <textarea id="q1" name="q1" rows="5" cols="30">{{output_data}}</textarea>-->
+<!--        <button type="submit">Get the processed data set</button>-->
+<!--    </form>-->
+</body>
+</html>
